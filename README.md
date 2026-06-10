@@ -106,7 +106,7 @@ Reads the CSV and publishes each row to the `ecommerce.orders` topic, using `ord
 Run it with:
 
 ```powershell
-python .\src\phase2\producer.py
+python src/phase2/producer.py
 ```
 ## output 
 ![producer.py](data/sample_output/6.1.pahse2.png)
@@ -118,7 +118,7 @@ Consumes from `ecommerce.orders`, prints each message, and keeps a running count
 Run it with:
 
 ```powershell
-python .\src\phase2\consumer.py
+python src/phase2/consumer.py
 ```
 ## output
 ![consumer.py](data/sample_output/6.2.1phase2.png)
@@ -132,7 +132,7 @@ Run two instances of the rebalance consumer in the same group to show partition 
 Terminal 1:
 
 ```powershell
-python .\src\phase2\consumer_rebalancing.py
+python src/phase2/consumer_rebalancing.py
 ```
 ## output
 ![Before rebalancing](data/sample_output/6.3.1partition1.png)
@@ -140,7 +140,7 @@ python .\src\phase2\consumer_rebalancing.py
 Terminal 2:
 
 ```powershell
-python .\src\phase2\consumer_rebalancing.py
+python src/phase2/consumer_rebalancing.py
 ```
 ## output
 ![After rebalancing](data/sample_output/6.3.partition1.png)
@@ -154,7 +154,7 @@ The script prints the current partition assignment for each instance so rebalanc
 Run it with:
 
 ```powershell
-python .\src\phase2\ProducerPoison.py
+python src/phase2/ProducerPoison.py
 ```
 ## output
 ![ProducerPoison](data/sample_output/6.4.1.producerpoison.png)
@@ -164,7 +164,7 @@ python .\src\phase2\ProducerPoison.py
 Run it with:
 
 ```powershell
-python .\src\phase2\ConsumerPoison.py
+python src/phase2/ConsumerPoison.py
 ```
 ## output
 
@@ -208,7 +208,7 @@ Produces synthetic ride events to `ride.events`.
 Run it with:
 
 ```powershell
-python .\src\phase3\ride_pipeline\ride_producer.py
+python src/phase3/ride_pipeline/ride_producer.py
 ```
 ## output
 
@@ -219,7 +219,7 @@ python .\src\phase3\ride_pipeline\ride_producer.py
 Optional idempotent/reliable producer variant:
 
 ```powershell
-python .\src\phase3\ride_pipeline\ride_producer_idempotent.py
+python src/phase3/ride_pipeline/ride_producer_idempotent.py
 ```
 ## output
 
@@ -232,7 +232,7 @@ Consumes from `ride.events`, filters only `COMPLETED` rides, and writes them to 
 Run it with:
 
 ```powershell
-python .\src\phase3\ride_pipeline\completed_consumer.py
+python src/phase3/ride_pipeline/completed_consumer.py
 ```
 ## output
 
@@ -246,7 +246,7 @@ Reads from `ride.completed` and prints estimated earnings per driver.
 Run it with:
 
 ```powershell
-python .\src\phase3\ride_pipeline\earnings_driver.py
+python src/phase3/ride_pipeline/earnings_driver.py
 ```
 ## output
 
@@ -259,7 +259,7 @@ Reads completed rides and prints the top 5 drivers by completed ride count.
 Run it with:
 
 ```powershell
-python .\src\phase3\ride_pipeline\top_drivers.py
+python src/phase3/ride_pipeline/top_drivers.py
 ```
 
 
