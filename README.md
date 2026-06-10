@@ -75,7 +75,7 @@ docker exec -it kafka /opt/kafka/bin/kafka-topics.sh --create --topic ride.compl
 
 ### Workflow
 
-
+```mermaid
 flowchart 
 
    ecommerce_orders.csv
