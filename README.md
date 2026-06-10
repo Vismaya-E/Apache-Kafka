@@ -107,7 +107,7 @@ Run it with:
 python .\src\phase2\producer.py
 ```
 ## output 
-![producer.py](data\sample_output\6.1.pahse2.png)
+![producer.py](data/sample_output/6.1.pahse2.png)
 
 ### 2.2 Consumer
 
@@ -119,7 +119,7 @@ Run it with:
 python .\src\phase2\consumer.py
 ```
 ## output
-![consumer.py](data\sample_output\6.2.1phase2.png)
+![consumer.py](data/sample_output/6.2.1phase2.png)
 ![](data\sample_output\6.2.phase2.png)
 
 
@@ -133,7 +133,7 @@ Terminal 1:
 python .\src\phase2\consumer_rebalancing.py
 ```
 ## output
-![Before rebalancing](data\sample_output\6.3.1partition1.png)
+![Before rebalancing](data/sample_output/6.3.1partition1.png)
 
 Terminal 2:
 
@@ -141,7 +141,7 @@ Terminal 2:
 python .\src\phase2\consumer_rebalancing.py
 ```
 ## output
-![After rebalancing](data\sample_output\6.3.partition1.png)
+![After rebalancing](data/sample_output/6.3.partition1.png)
 
 The script prints the current partition assignment for each instance so rebalance behavior is visible when a second consumer joins or leaves the group.
 
@@ -155,7 +155,7 @@ Run it with:
 python .\src\phase2\ProducerPoison.py
 ```
 ## output
-![ProducerPoison](data\sample_output\6.4.1.producerpoison.png)
+![ProducerPoison](data/sample_output/6.4.1.producerpoison.png)
 
 `ConsumerPoison.py` shows one way to skip poison messages without crashing the consumer.
 
@@ -166,7 +166,7 @@ python .\src\phase2\ConsumerPoison.py
 ```
 ## output
 
-![ConsumerPoison](data\sample_output\6.4.poison_message.png)
+![ConsumerPoison](data/sample_output/6.4.poison_message.png)
 
 ## Phase 3 - Ride Sharing Pipeline 
 
@@ -210,7 +210,7 @@ python .\src\phase3\ride_pipeline\ride_producer.py
 ```
 ## output
 
-![Ride Producer](data\sample_output\7.1.producer_ride.png)
+![Ride Producer](data/sample_output/7.1.producer_ride.png)
 
 
 
@@ -221,7 +221,7 @@ python .\src\phase3\ride_pipeline\ride_producer_idempotent.py
 ```
 ## output
 
-![Ride Producer](data\sample_output\7.1.idempotent.png)
+![Ride Producer](data/sample_output/7.1.idempotent.png)
 
 ### 3.2 Completed Ride Consumer
 
@@ -234,7 +234,7 @@ python .\src\phase3\ride_pipeline\completed_consumer.py
 ```
 ## output
 
-![Completed Ride](data\sample_output\7.2.completedrider.png)
+![Completed Ride](data/sample_output/7.2.completedrider.png)
 
 
 ### 3.3 Driver Earnings Aggregator
@@ -248,7 +248,7 @@ python .\src\phase3\ride_pipeline\earnings_driver.py
 ```
 ## output
 
-![Driver Earnings](data\sample_output\7.3.earning_driver.png)
+![Driver Earnings](data/sample_output/7.3.earning_driver.png)
 
 ### 3.4 Top Drivers
 
@@ -263,7 +263,7 @@ python .\src\phase3\ride_pipeline\top_drivers.py
 
 ## output
 
-![Top driver](data\sample_output\7.4.topdriver.png)
+![Top driver](data/sample_output/7.4.topdriver.png)
 
 ## Known Issues
 
@@ -302,4 +302,3 @@ docker exec -it kafka /opt/kafka/bin/kafka-topics.sh --describe --topic ecommerc
 ```
 
 Recreate with 3 partitions if needed, and always set `order_id` as the message key in the producer.
- 
