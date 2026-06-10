@@ -5,11 +5,13 @@ streaming architecture built with **Apache Kafka** and **Python**.
 The project satisfies all requirements across three experimental phases of the programmatic producers/consumers, group rebalancing handling, poison-message processing, 
 and an event-driven stream processing pipeline
 
-## Requirements
+## Technologies Used
 
-- Python 3.10 or newer
-- Kafka running on `localhost:9092`
-- Packages from `requirements.txt`
+- Apache Kafka
+- Python
+- kafka-python
+- Docker Compose
+- GitHub
 
 ## Setup Steps
 
@@ -75,7 +77,7 @@ docker exec -it kafka /opt/kafka/bin/kafka-topics.sh --create --topic ride.compl
 
 ### Workflow
 
-```mermaid
+```text
 flowchart 
 
    ecommerce_orders.csv
@@ -180,7 +182,7 @@ This mini project streams ride events and derives completed rides and driver ear
 
 ### Workflow
 
-```mermaid
+```text
 flowchart TD
 	ride.events (Producer sends ride data)
         ↓
